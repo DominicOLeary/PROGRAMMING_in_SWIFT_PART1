@@ -1,0 +1,12 @@
+let rectFrame: CGRect = CGRect(x:CGFloat(xPos), y:CGFloat(yPos), width:CGFloat(rectWidth), height:CGFloat(rectHeight))
+//Where xPos is the horizontal position inset from the left margin, yPos is the vertical inset from the top margin, rectWidth is the rectangles width you want, and rectHeight is the height you want.
+let rectView = UIView(frame: rectFrame)
+//Sets up the view for the Rectangle as a UIView
+rectView.backgroundColor = UIColor.green
+// Change .green to any UIColor you want. There are other formats like HEX and RGB (seek documentation on how to do that)
+self.view.addSubview(rectView)
+// Add above UIView object as the main view's subview (edited) 
+
+//This data has been copied from week4 in slack the student web site.
+//In order to do the traffic light project we need to create a rectangle with a pointed triangle top and three circles inside.
+//I am hoping that the rmit student access to swift or at least x-code is still available.
